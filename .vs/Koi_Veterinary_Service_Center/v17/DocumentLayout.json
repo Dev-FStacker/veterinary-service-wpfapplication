@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\wpfapplication\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\wpfapplication\\admin\\servicemanagementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\admin\\servicemanagementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\wpfapplication\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\wpfapplication\\admin\\servicemanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\admin\\servicemanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\data\\koiveterinaryservicecenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\data\\koiveterinaryservicecenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\wpfapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\models\\servicedeliverymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\servicedeliverymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\models\\animalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\animalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\bll\\services\\fishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|solutionrelative:bll\\services\\fishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\bll\\interfaces\\ifishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\ifishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\repositories\\fishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\fishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koi_veterinary_service_center\\dal\\interfaces\\ifishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ifishrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,79 +82,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\appsettings.json",
-              "RelativeDocumentMoniker": "WPFApplication\\appsettings.json",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\appsettings.json",
-              "RelativeToolTip": "WPFApplication\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-02T17:42:01.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WPFApplication\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WPFApplication\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBMAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Service.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Service.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\Service.cs",
+              "RelativeToolTip": "DAL\\Models\\Service.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:37:51.831Z",
+              "WhenOpened": "2024-11-04T18:33:15.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WPFApplication\\MainWindow.xaml",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\MainWindow.xaml",
-              "RelativeToolTip": "WPFApplication\\MainWindow.xaml",
+              "Title": "ServiceManagementPage.xaml",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\admin\\ServiceManagementPage.xaml",
+              "RelativeDocumentMoniker": "WPFApplication\\admin\\ServiceManagementPage.xaml",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\admin\\ServiceManagementPage.xaml",
+              "RelativeToolTip": "WPFApplication\\admin\\ServiceManagementPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-02T17:37:20.075Z",
+              "WhenOpened": "2024-11-04T18:25:42.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceManagementPage.xaml.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\admin\\ServiceManagementPage.xaml.cs",
+              "RelativeDocumentMoniker": "WPFApplication\\admin\\ServiceManagementPage.xaml.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\admin\\ServiceManagementPage.xaml.cs",
+              "RelativeToolTip": "WPFApplication\\admin\\ServiceManagementPage.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:24:12.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AnimalProfile.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\AnimalProfile.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\AnimalProfile.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\AnimalProfile.cs",
-              "RelativeToolTip": "DAL\\Models\\AnimalProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FishService.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\Services\\FishService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\FishService.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\Services\\FishService.cs",
+              "RelativeToolTip": "BLL\\Services\\FishService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:37:04.239Z",
+              "WhenOpened": "2024-11-04T18:22:19.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Account.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\Account.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Account.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\Account.cs",
-              "RelativeToolTip": "DAL\\Models\\Account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "Title": "IFishService.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\Interfaces\\IFishService.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IFishService.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\Interfaces\\IFishService.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IFishService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:36:20.55Z",
+              "WhenOpened": "2024-11-04T18:21:39.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KoiVeterinaryServiceCenter.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Data\\KoiVeterinaryServiceCenter.cs",
-              "RelativeDocumentMoniker": "DAL\\Data\\KoiVeterinaryServiceCenter.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Data\\KoiVeterinaryServiceCenter.cs",
-              "RelativeToolTip": "DAL\\Data\\KoiVeterinaryServiceCenter.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA+wDwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ServiceDeliveryMethod.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\ServiceDeliveryMethod.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\ServiceDeliveryMethod.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Models\\ServiceDeliveryMethod.cs",
+              "RelativeToolTip": "DAL\\Models\\ServiceDeliveryMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:34:09.543Z",
+              "WhenOpened": "2024-11-04T18:19:54.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FishRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Repositories\\FishRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\FishRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Repositories\\FishRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\FishRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:13:57.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IFishRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Interfaces\\IFishRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IFishRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\Interfaces\\IFishRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IFishRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:13:10.806Z",
               "EditorCaption": ""
             }
           ]

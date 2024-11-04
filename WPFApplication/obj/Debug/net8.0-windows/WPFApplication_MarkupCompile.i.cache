@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\Class\CSHARP\PROJECTS\Koi_Veterinary_Service_Center\WPFApplication\App.xaml
-11407045341
+32028851590
 
-6-1973129593
+8-1504796189
 2461336943671
-MainWindow.xaml;
+admin\AdminWindow.xaml;admin\ServiceManagementPage.xaml;MainWindow.xaml;
 
 False
 

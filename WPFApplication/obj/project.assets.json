@@ -3216,8 +3216,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "BLL >= 1.0.0",
-      "DAL >= 1.0.0"
+      "BLL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3255,9 +3254,6 @@
           "projectReferences": {
             "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\BLL.csproj": {
               "projectPath": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\BLL.csproj"
-            },
-            "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\DAL\\DAL.csproj"
             }
           }
         }
