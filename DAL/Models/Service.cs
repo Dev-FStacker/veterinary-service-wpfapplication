@@ -20,4 +20,9 @@ public partial class Service
     public virtual ICollection<BookingDetail> BookingDetails { get; set; } = new List<BookingDetail>();
 
     public virtual ServiceDeliveryMethod ServiceDeliveryMethod { get; set; } = null!;
+    public string StatusDescription
+    {
+        get { return (Status.Equals("1")) ? "Available" : "Invalid"; }
+
+    }
 }
