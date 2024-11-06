@@ -21,7 +21,16 @@
     <Page Update="admin\ServiceManagementPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="customer\CustomerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="vet\VetWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
