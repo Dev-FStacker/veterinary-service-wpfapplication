@@ -31,7 +31,7 @@ namespace WPFApplication
             _authService = new AuthService();
             InitializeComponent();
         }
-               
+
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             checkEmpty();
@@ -45,9 +45,10 @@ namespace WPFApplication
                 this.Hide();
                 OpenRoleSpecificWindow(account);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                lbErrorMessage.Content = ex.Message;
+                MessageBox.Show(ex.Message);
+                return;
             }
         }
 
