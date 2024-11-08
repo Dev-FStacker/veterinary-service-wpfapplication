@@ -19,6 +19,6 @@ namespace BLL.Services
         }
         public void AddSlot(Schedule schedule) => _repo.Add(schedule);
         public List<Schedule> GetSchedulesById(string employeeId) => _repo.GetAllById(employeeId);
-        public void RemoveSlot(Schedule schedule) => _repo.Delete(schedule);
+        public void RemoveSlot(string id) => _repo.Delete(id);
     }
 }

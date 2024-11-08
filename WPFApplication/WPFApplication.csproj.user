@@ -13,6 +13,12 @@
     <Compile Update="admin\ServiceManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="customer\BookingFormWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="customer\CustomerPanelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="vet\ScheduleManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +28,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="admin\ServiceManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="customer\BookingFormWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="customer\CustomerPanelWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="customer\CustomerWindow.xaml">
