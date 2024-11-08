@@ -6,15 +6,13 @@
       xmlns:local="clr-namespace:WPFApplication.admin"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Service Management Page">
-
+      Title="Service Management Page" Background="White">
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
         <!-- Header -->
         <TextBlock Text="Service Management" FontSize="24" FontWeight="Bold" Margin="10" Grid.Row="0"/>
 

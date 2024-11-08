@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Class\CSHARP\PROJECTS\Koi_Veterinary_Service_Center\WPFApplication\obj\Debug\net8.0-windows\
+E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\
 WPFApplication
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\Class\CSHARP\PROJECTS\Koi_Veterinary_Service_Center\WPFApplication\App.xaml
-32028851590
+E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\App.xaml
+7507007099
 
-6225835254
-2461336943671
-admin\AdminWindow.xaml;admin\ServiceManagementPage.xaml;MainWindow.xaml;
+11-1815364886
+252-799659803
+admin\AdminWindow.xaml;admin\ServiceManagementPage.xaml;customer\CustomerWindow.xaml;Login.xaml;MainWindow.xaml;vet\ScheduleManagementPage.xaml;vet\VetWindow.xaml;
 
 False
 

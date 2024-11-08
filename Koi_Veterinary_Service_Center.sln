@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{882E83CB-E389-49F7-9151-8588AF4C43B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFApplication", "WPFApplication\WPFApplication.csproj", "{A09732BE-9B96-4F33-9F61-79F3D8DE0313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFApplication", "WPFApplication\WPFApplication.csproj", "{A09732BE-9B96-4F33-9F61-79F3D8DE0313}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

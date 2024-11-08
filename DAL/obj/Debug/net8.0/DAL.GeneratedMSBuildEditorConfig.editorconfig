@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DAL
-build_property.ProjectDir = E:\Class\CSHARP\PROJECTS\Koi_Veterinary_Service_Center\DAL\
+build_property.ProjectDir = E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\DAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

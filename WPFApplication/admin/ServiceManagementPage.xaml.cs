@@ -22,11 +22,11 @@ namespace WPFApplication.admin
     /// </summary>
     public partial class ServiceManagementPage : Page
     {
-        private readonly IFishService _fishService;
+        private readonly IKoiService _fishService;
         public ServiceManagementPage()
         {
             InitializeComponent();
-            _fishService = new FishService();
+            _fishService = new KoiService();
             LoadServices();
         }
 

@@ -1,0 +1,23 @@
+﻿<Page x:Class="WPFApplication.vet.ScheduleManagementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+      xmlns:local="clr-namespace:WPFApplication.vet"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ScheduleManagementPage" Background="White">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" CellTapped="Schedule_CellTapped">
+            <syncfusion:SfScheduler.AppointmentMapping>
+                <syncfusion:AppointmentMapping
+                    Subject="ServiceName"
+                    StartTime="From"
+                    EndTime="To"
+                    AppointmentBackground="BackgroundColor"
+                    Foreground="ForegroundColor"/>
+            </syncfusion:SfScheduler.AppointmentMapping>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Page>
