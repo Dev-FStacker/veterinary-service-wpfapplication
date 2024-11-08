@@ -1,0 +1,113 @@
+﻿<Window x:Class="WPFApplication.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApplication"
+        mc:Ignorable="d"
+                Title="Login" Height="550" Width="900"
+        WindowStartupLocation ="CenterScreen"
+        FontFamily="Segoe UI Semibold">
+
+    <DockPanel>
+        <Border CornerRadius="12 0 0 12" Width="360" HorizontalAlignment="Left">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF2729A2" Offset="0.0"/>
+                    <GradientStop Color="#FF2C61B7" Offset="0.5"/>
+                    <GradientStop Color="#FF51C2F1" Offset="1.2"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="SignUp" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontFamily="Arial Rounded MT Bold"/>
+
+                <Label Content="SignUp Now To Connect With Us!" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="19" FontFamily="Arial"/>
+
+                <Button x:Name="btnSignUp" Style="{StaticResource RoundedButtonStyle}" Content="SignUp" Grid.Row="5" Foreground="White" Margin="85,5,85,10" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="White"/>
+
+            </Grid>
+
+
+        </Border>
+
+        <Border CornerRadius="0 12 12 0" Background="White" Width="540" HorizontalAlignment="Right">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Login" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="50" FontFamily="Arial Rounded MT Bold" Margin="0,62,0,0">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#FF2729A2" Offset="0.0"/>
+                            <GradientStop Color="#FF2C61B7" Offset="0.5"/>
+                            <GradientStop Color="#FF51C2F1" Offset="1.2"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>
+                </TextBlock>
+
+                <Border Grid.Row="2" BorderBrush="#FF737776" CornerRadius="29" BorderThickness="1" Margin="55,0,95,0" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="51"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\mail.png" Opacity=".5" Height="40" Width="31" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,16,310,17" HorizontalAlignment="Left"/>
+                        <TextBox x:Name="txtEmail" Style="{StaticResource RoundedTextBoxStyle}"  TextAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="336" FontSize="20" Grid.Column="1" BorderBrush="Transparent">
+                            <TextBox.Foreground>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#FF2729A2" Offset="0.0"/>
+                                    <GradientStop Color="#FF2C61B7" Offset="0.5"/>
+                                    <GradientStop Color="#FF51C2F1" Offset="1.2"/>
+                                </LinearGradientBrush>
+                            </TextBox.Foreground>
+                        </TextBox>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="4" BorderBrush="#FF737776" CornerRadius="29" BorderThickness="1" Margin="55,0,95,0" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\padlock.png" Opacity=".5" Margin="10,16,0,17" Height="40" Width="30" Grid.Column="0" HorizontalAlignment="Left"/>
+                        <PasswordBox x:Name="pwbPassword" Grid.Column="1" Style="{StaticResource RoundedPasswordBoxStyle}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="336" BorderBrush="Transparent" FontSize="20"/>
+                    </Grid>
+                </Border>
+
+                <Button x:Name="btnLogin" Style="{StaticResource RoundedButtonStyle}" Content="Login" Grid.Row="6" Margin="202,7,190,8" HorizontalContentAlignment="Center" BorderThickness="0.2" FontSize="18" Foreground="White" BorderBrush="Transparent" Click="btnLogin_Click">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#FF2729A2" Offset="0.0"/>
+                            <GradientStop Color="#FF2C61B7" Offset="0.5"/>
+                            <GradientStop Color="#FF51C2F1" Offset="1.2"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+
+
+        </Border>
+    </DockPanel>
+
+
+</Window>
