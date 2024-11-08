@@ -94,8 +94,7 @@
               "RelativeToolTip": "WPFApplication\\common\\AppointmentModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:19:16.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:19:16.831Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "WPFApplication\\vet\\VetWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:19:13.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:19:13.746Z"
             },
             {
               "$type": "Document",
@@ -119,8 +117,7 @@
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\ScheduleManagementPage.xaml",
               "RelativeToolTip": "WPFApplication\\vet\\ScheduleManagementPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-08T10:17:32.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:17:32.889Z"
             },
             {
               "$type": "Document",
@@ -132,8 +129,7 @@
               "RelativeToolTip": "DAL\\Models\\Service.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAUwA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:12:42.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:12:42.318Z"
             },
             {
               "$type": "Document",
@@ -145,8 +141,7 @@
               "RelativeToolTip": "DAL\\Models\\BookingDetail.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:12:23.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:12:23.39Z"
             },
             {
               "$type": "Document",
@@ -158,8 +153,7 @@
               "RelativeToolTip": "DAL\\Repositories\\ScheduleRepository.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwD8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:11:48.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:11:48.45Z"
             },
             {
               "$type": "Document",
@@ -169,7 +163,7 @@
               "RelativeDocumentMoniker": "WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
               "RelativeToolTip": "WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAIwDsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAIwDgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T10:07:22.108Z",
               "EditorCaption": ""
@@ -184,8 +178,7 @@
               "RelativeToolTip": "BLL\\Services\\ScheduleService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAwBMAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:05:44.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:05:44.84Z"
             },
             {
               "$type": "Document",
@@ -197,8 +190,7 @@
               "RelativeToolTip": "BLL\\Interfaces\\IScheduleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:04:07.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T10:04:07.353Z"
             }
           ]
         }
