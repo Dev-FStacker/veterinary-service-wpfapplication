@@ -42,7 +42,7 @@ namespace WPFApplication
             {
                 Account account = _authService.Authenticate(email, password);
                 MessageBox.Show("Login successful", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                this.Hide();
+                this.Close();
                 OpenRoleSpecificWindow(account);
             }
             catch (Exception ex)

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFApplication.vet;
 
 namespace WPFApplication
 {
@@ -22,6 +23,21 @@ namespace WPFApplication
         public VetWindow()
         {
             InitializeComponent();
+        }
+
+        private void Schedule_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ScheduleManagementPage());
+        }
+
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

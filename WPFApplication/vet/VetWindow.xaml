@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApplication"
         mc:Ignorable="d"
-        Title="VetWindow" Height="450" Width="800">
+        Title="VetWindow" Height="600" Width="1000"  WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <StackPanel Background="{StaticResource SidebarGradient}" Width="220" HorizontalAlignment="Left">
+            <TextBlock Text="Veterinary Panel" FontSize="22" Foreground="White" FontWeight="Bold" Margin="20,20,0,30"/>
+            <Button Content="Schedule" Click="Schedule_Click" Style="{StaticResource NavButtonStyle}"/>
+            <Button Content="Profile" Click="Profile_Click" Style="{StaticResource NavButtonStyle}"/>
+            <Button Content="Logout" Click="Logout_Click" Style="{StaticResource NavButtonStyle}"/>
+        </StackPanel>
+        <!-- Main Content Area as Frame for Page Navigation -->
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Margin="220,0,0,0"/>
     </Grid>
 </Window>

@@ -13,6 +13,9 @@
     <Compile Update="admin\ServiceManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="vet\ScheduleManagementPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="admin\AdminWindow.xaml">
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="vet\ScheduleManagementPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="vet\VetWindow.xaml">

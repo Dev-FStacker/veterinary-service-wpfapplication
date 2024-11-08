@@ -753,6 +753,100 @@
           }
         }
       },
+      "Syncfusion.Licensing/27.1.58": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.SfBusyIndicator.WPF/27.1.58": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "27.1.58"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfInput.WPF/27.1.58": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "27.1.58",
+          "Syncfusion.Shared.WPF": "27.1.58"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfScheduler.WPF/27.1.58": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "27.1.58",
+          "Syncfusion.SfBusyIndicator.WPF": "27.1.58",
+          "Syncfusion.SfInput.WPF": "27.1.58",
+          "Syncfusion.SfSkinManager.WPF": "27.1.58",
+          "Syncfusion.Shared.WPF": "27.1.58"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfSkinManager.WPF/27.1.58": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "27.1.58"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/27.1.58": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "27.1.58"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -2340,6 +2434,191 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Syncfusion.Licensing/27.1.58": {
+      "sha512": "/L0Htf3W2dKw+Uh5wGnYVkHJJuAFAWhmgYZ4w4mY9KGEA9GzHwhqqTra7s4i75oC3P0sYykVRIzOoWUCAmkVBg==",
+      "type": "package",
+      "path": "syncfusion.licensing/27.1.58",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net462/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/net8.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.27.1.58.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.SfBusyIndicator.WPF/27.1.58": {
+      "sha512": "/ZOhV5c7fLl9Sb2J7P2QXikrKG19eBcyFUtTqBoYN6KO1lVWtLrc13c8XpvyJB8TbIOfkXKIU81S07eLd39vFA==",
+      "type": "package",
+      "path": "syncfusion.sfbusyindicator.wpf/27.1.58",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfBusyIndicator.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfBusyIndicator.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net40/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net462/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net462/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.SfBusyIndicator.WPF.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.SfBusyIndicator.Wpf.VisualStudio.Design.dll",
+        "lib/net462/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net462/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net8.0-windows7.0/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.xml",
+        "syncfusion.sfbusyindicator.wpf.27.1.58.nupkg.sha512",
+        "syncfusion.sfbusyindicator.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfInput.WPF/27.1.58": {
+      "sha512": "N2Wq7ctbrkHbPBlbnmQTONDjD2tBSIC1LrLYJbWkHZaFc/YBjrkjOB3Fj5KsT+y/xkRZK+hetTTQN+MsJv7joQ==",
+      "type": "package",
+      "path": "syncfusion.sfinput.wpf/27.1.58",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfInput.WPF.dll",
+        "lib/net40/Syncfusion.SfInput.WPF.xml",
+        "lib/net462/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net462/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net462/Syncfusion.SfInput.WPF.dll",
+        "lib/net462/Syncfusion.SfInput.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.xml",
+        "lib/net8.0-windows7.0/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfInput.WPF.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfInput.WPF.xml",
+        "syncfusion.sfinput.wpf.27.1.58.nupkg.sha512",
+        "syncfusion.sfinput.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfScheduler.WPF/27.1.58": {
+      "sha512": "OBg4GZwhI9f94b6AEfgIaCG+uTaIa0f3HbpzkwT4Y8r/EV7cGCWBiAj35BD1h2VyfU/ULZH1H3nDT9vt9pXUXA==",
+      "type": "package",
+      "path": "syncfusion.sfscheduler.wpf/27.1.58",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.VisualStudio.Design.dll",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.dll.Design.dll",
+        "lib/net40/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net40/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net462/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.SfScheduler.WPF.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.SfScheduler.WPF.VisualStudio.Design.dll",
+        "lib/net462/Design/Syncfusion.SfScheduler.WPF.dll.Design.dll",
+        "lib/net462/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net462/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net8.0-windows7.0/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfScheduler.WPF.xml",
+        "syncfusion.sfscheduler.wpf.27.1.58.nupkg.sha512",
+        "syncfusion.sfscheduler.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfSkinManager.WPF/27.1.58": {
+      "sha512": "7y3aOveMbbe1CdMgoODtGhjXAcnJTzMeZZ/FbZZshAYi0dXmi/+kBwBh3rZusuw/CD2YGZiS4DTwoND5CS8cwQ==",
+      "type": "package",
+      "path": "syncfusion.sfskinmanager.wpf/27.1.58",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net462/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net462/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net8.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net8.0-windows7.0/Syncfusion.SfSkinManager.WPF.xml",
+        "syncfusion.sfskinmanager.wpf.27.1.58.nupkg.sha512",
+        "syncfusion.sfskinmanager.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Shared.WPF/27.1.58": {
+      "sha512": "GU3wBbx5Y1sk79SBupacst/76KNPIFUGxidUnDVHF7aVzVAD8bktVezv/aO45tbb0NTb37Z7TxYchSxCMXKFQQ==",
+      "type": "package",
+      "path": "syncfusion.shared.wpf/27.1.58",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net40/Syncfusion.Shared.WPF.dll",
+        "lib/net40/Syncfusion.Shared.WPF.xml",
+        "lib/net462/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net462/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net462/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net462/Syncfusion.Shared.WPF.dll",
+        "lib/net462/Syncfusion.Shared.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.xml",
+        "lib/net8.0-windows7.0/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net8.0-windows7.0/Syncfusion.Shared.WPF.dll",
+        "lib/net8.0-windows7.0/Syncfusion.Shared.WPF.xml",
+        "syncfusion.shared.wpf.27.1.58.nupkg.sha512",
+        "syncfusion.shared.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
     "System.Configuration.ConfigurationManager/6.0.1": {
       "sha512": "jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
       "type": "package",
@@ -3216,7 +3495,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "BLL >= 1.0.0"
+      "BLL >= 1.0.0",
+      "Syncfusion.SfScheduler.WPF >= 27.1.58"
     ]
   },
   "packageFolders": {
@@ -3226,11 +3506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\WPFApplication.csproj",
+      "projectUniqueName": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\WPFApplication.csproj",
       "projectName": "WPFApplication",
-      "projectPath": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\WPFApplication.csproj",
+      "projectPath": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\WPFApplication.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\WPFApplication\\obj\\",
+      "outputPath": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3252,8 +3532,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\BLL.csproj": {
-              "projectPath": "E:\\Class\\CSHARP\\PROJECTS\\Koi_Veterinary_Service_Center\\BLL\\BLL.csproj"
+            "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\BLL.csproj": {
+              "projectPath": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\BLL.csproj"
             }
           }
         }
@@ -3272,6 +3552,12 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Syncfusion.SfScheduler.WPF": {
+            "target": "Package",
+            "version": "[27.1.58, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
