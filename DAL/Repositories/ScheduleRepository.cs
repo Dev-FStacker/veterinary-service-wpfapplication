@@ -33,22 +33,22 @@ namespace DAL.Repositories
             }
         }
 
-        public void Delete(Schedule schedule)
+        public void Delete(string id)
         {
             try
             {
-                var hasBookings = _context.Bookings
-                    .Any(b => b.ScheduleId == schedule.ScheduleId);
-                if (hasBookings)
+                var schedule = GetById(id);
+                if (schedule != null)
                 {
-                    throw new Exception();
+                    _context.Schedules.Remove(schedule);
+                    _context.SaveChanges();
                 }
-                _context.Remove(schedule);
-                _context.SaveChanges();
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine(ex.Message);
+                throw;  // Re-throw the exception after logging it
             }
         }
 
@@ -57,12 +57,26 @@ namespace DAL.Repositories
             try
             {
                 var schedules = _context.Schedules
-                                    .Include(s => s.Bookings)
-                                    .ThenInclude(b => b.BookingDetails)   // Include BookingDetails to access associated Service
-                                    .ThenInclude(bd => bd.Service)            // Include Service within BookingDetails
-                                    .Where(s => s.EmployeeId == employeeId)
-                                    .ToList();
+                    .Include(s => s.Bookings)
+                        .ThenInclude(b => b.BookingDetails)
+                            .ThenInclude(bd => bd.Service)
+                    .Include(s => s.SlotTables)
+                    .Where(s => s.EmployeeId == employeeId)
+                    .ToList();
                 return schedules;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public Schedule GetById(string scheduleId)
+        {
+            try
+            {
+                return _context.Schedules.FirstOrDefault(s => s.ScheduleId == scheduleId);
             }
             catch (Exception)
             {

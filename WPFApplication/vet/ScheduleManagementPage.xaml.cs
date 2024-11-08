@@ -17,49 +17,61 @@ namespace WPFApplication.vet
     public partial class ScheduleManagementPage : Page
     {
         private readonly IScheduleService _scheduleService;
+        private readonly ISlotService _slotService;
         public ObservableCollection<AppointmentModel> Appointments { get; set; }
         public ScheduleManagementPage()
         {
             InitializeComponent();
             _scheduleService = new ScheduleService();
+            _slotService = new SlotService();
             LoadAppointments();
         }
 
-        private void LoadAppointments()
+        private async void LoadAppointments()
         {
             Appointments = new ObservableCollection<AppointmentModel>();
-
             try
             {
-                var schedules = _scheduleService.GetSchedulesById("E3"); 
+                var schedules = await Task.Run(() => _scheduleService.GetSchedulesById("E3"));
 
                 foreach (var schedule in schedules)
                 {
-                    var appointment = new AppointmentModel
+                    foreach (var slotTable in schedule.SlotTables)
                     {
-                        From = schedule.Date.ToDateTime(new TimeOnly(7, 0)),
-                        To = schedule.Date.ToDateTime(new TimeOnly(17, 0)),   
-                        BackgroundColor = (schedule.Status == "Available" || schedule.Status == "Active") ? Brushes.Blue : Brushes.Red,
-                        ForegroundColor = Brushes.White,
-                        ServiceName = "Available"
-                    };
+                        var (fromTime, toTime) = GetTimeRangeBySlot((int)slotTable.Slot);
 
-                    // Nếu có booking, in ra thông tin service của booking
-                    if (schedule.Bookings != null && schedule.Bookings.Any())
-                    {
-                        foreach (var booking in schedule.Bookings)
+                        var fromDateTime = new DateTime(schedule.Date.Year, schedule.Date.Month, schedule.Date.Day, fromTime.Hour, fromTime.Minute, 0);
+                        var toDateTime = new DateTime(schedule.Date.Year, schedule.Date.Month, schedule.Date.Day, toTime.Hour, toTime.Minute, 0);
+
+                        var appointment = new AppointmentModel
                         {
-                            foreach (var bookingDetail in booking.BookingDetails)
+                            From = fromDateTime,
+                            To = toDateTime,
+                            BackgroundColor = (schedule.Status == "Available" || schedule.Status == "Active") ? Brushes.Green : Brushes.Orange,
+                            ForegroundColor = Brushes.White,
+                            ServiceName = "Available To Book"
+                        };
+
+                        if (schedule.Bookings != null && schedule.Bookings.Any())
+                        {
+                            foreach (var booking in schedule.Bookings)
                             {
-                                appointment.ServiceName = !string.IsNullOrEmpty(bookingDetail.Service?.Name) ? bookingDetail.Service.Name : "Available";
+                                foreach (var bookingDetail in booking.BookingDetails)
+                                {
+                                    if (!string.IsNullOrEmpty(bookingDetail.Service?.Name))
+                                    {
+                                        appointment.ServiceName = bookingDetail.Service.Name;
+                                        break;
+                                    }
+                                }
                             }
                         }
+                        Appointments.Add(appointment);
                     }
-
-                    Appointments.Add(appointment);
                 }
 
                 Schedule.ItemsSource = Appointments;
+
             }
             catch (Exception ex)
             {
@@ -67,6 +79,7 @@ namespace WPFApplication.vet
                 return;
             }
         }
+
 
         private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
         {
@@ -78,13 +91,12 @@ namespace WPFApplication.vet
 
                 var selectedTimeOnly = new TimeOnly(selectedTime.Hours, selectedTime.Minutes, selectedTime.Seconds);
 
-                // Define the time slots
                 var slots = new[]
                 {
-                    new { Slot = "Slot1", Start = new TimeOnly(7, 0), End = new TimeOnly(9, 15) },
-                    new { Slot = "Slot2", Start = new TimeOnly(9, 30), End = new TimeOnly(11, 45) },
-                    new { Slot = "Slot3", Start = new TimeOnly(13, 0), End = new TimeOnly(15, 15) },
-                    new { Slot = "Slot4", Start = new TimeOnly(15, 30), End = new TimeOnly(17, 15) }
+                    new { Slot = "Slot1", Start = new TimeOnly(7, 0), End = new TimeOnly(9, 15), SlotNumber = 1 },
+                    new { Slot = "Slot2", Start = new TimeOnly(9, 30), End = new TimeOnly(11, 45), SlotNumber = 2 },
+                    new { Slot = "Slot3", Start = new TimeOnly(13, 0), End = new TimeOnly(15, 15), SlotNumber = 3 },
+                    new { Slot = "Slot4", Start = new TimeOnly(15, 30), End = new TimeOnly(17, 15), SlotNumber = 4 }
                 };
 
                 var matchingSlot = slots.FirstOrDefault(slot =>
@@ -92,24 +104,72 @@ namespace WPFApplication.vet
 
                 if (matchingSlot != null)
                 {
-                    var newSlot = new Schedule
+                    var existingSlot = _scheduleService.GetSchedulesById("E3")
+                                        .FirstOrDefault(s => s.Date == selectedDate && s.SlotTables.Any(st => st.Slot == matchingSlot.SlotNumber));
+                    if (existingSlot != null)
                     {
-                        ScheduleId = Guid.NewGuid().ToString().Substring(0, 20),
-                        EmployeeId = "E3",
-                        Date = selectedDate,
-                        Status = "Available",
-                        Note = $"Available for {matchingSlot.Slot}"
-                    };
+                        var confirmationDelete = MessageBox.Show($"A time slot for {matchingSlot.Slot} on {selectedDate} already exists. Do you want to delete the existing booking?",
+                                      "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-                    _scheduleService.AddSlot(newSlot);
-                    MessageBox.Show($"Free time slot {matchingSlot.Slot} added for {selectedDateTime}");
+                        if (confirmationDelete == MessageBoxResult.Yes)
+                        {
+                            if (existingSlot.Bookings != null && existingSlot.Bookings.Any())
+                            {
+                                MessageBox.Show($"The time slot for {matchingSlot.Slot} on {selectedDate} already has bookings and cannot be deleted.");
+                                return;
+                            }
+
+                            ISlotService slotService = new SlotService();
+                            IScheduleService scheduleService = new ScheduleService();
+
+                            foreach (var slot in existingSlot.SlotTables.ToList())
+                            {
+                                slotService.RemoveSlot(slot.SlotTableId);
+                            }
+
+                            scheduleService.RemoveSlot(existingSlot.ScheduleId);
+
+                            MessageBox.Show($"The free time slot {matchingSlot.Slot} on {selectedDateTime} has been deleted.");
+                            return;
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
+                    var confirmation = MessageBox.Show($"Do you want to add a free time slot {matchingSlot.Slot} for {selectedDateTime}?",
+                                                       "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (confirmation == MessageBoxResult.Yes)
+                    {
+                        var newSlot = new Schedule
+                        {
+                            ScheduleId = Guid.NewGuid().ToString().Substring(0, 20),
+                            EmployeeId = "E3",
+                            Date = selectedDate,
+                            Status = "Available",
+                            Note = $"Available for {matchingSlot.Slot}"
+                        };
+                        _scheduleService.AddSlot(newSlot);
+                        var slotTable = new SlotTable
+                        {
+                            SlotTableId = Guid.NewGuid().ToString().Substring(0, 20),
+                            ScheduleId = newSlot.ScheduleId,
+                            Slot = matchingSlot.SlotNumber,
+                            SlotStatus = true
+                        };
+                        _slotService.AddSlot(slotTable);
+                        MessageBox.Show($"Free time slot {matchingSlot.Slot} added for {selectedDateTime}");
+                    }
+                    else
+                    {
+                        return;
+                    }
+
                 }
                 else
                 {
                     MessageBox.Show("This time is not part of the available slots.");
                 }
-
-                LoadAppointments();
             }
             catch (DbUpdateException ex)
             {
@@ -119,6 +179,29 @@ namespace WPFApplication.vet
             {
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
+            finally
+            {
+                LoadAppointments();
+            }
         }
+
+        private (TimeOnly FromTime, TimeOnly ToTime) GetTimeRangeBySlot(int slotNumber)
+        {
+            switch (slotNumber)
+            {
+                case 1:
+                    return (new TimeOnly(7, 0), new TimeOnly(9, 15));
+                case 2:
+                    return (new TimeOnly(9, 30), new TimeOnly(11, 45));
+                case 3:
+                    return (new TimeOnly(12, 30), new TimeOnly(14, 45));
+                case 4:
+                    return (new TimeOnly(15, 0), new TimeOnly(17, 15));
+                default:
+                    MessageBox.Show($"Invalid slot number encountered: {slotNumber}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    throw new ArgumentOutOfRangeException(nameof(slotNumber), $"Invalid slot number: {slotNumber}");
+            }
+        }
+
     }
 }

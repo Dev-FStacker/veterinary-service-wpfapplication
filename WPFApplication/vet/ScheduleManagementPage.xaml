@@ -9,7 +9,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ScheduleManagementPage" Background="White">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" CellTapped="Schedule_CellTapped">
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" CellTapped="Schedule_CellTapped" >
             <syncfusion:SfScheduler.AppointmentMapping>
                 <syncfusion:AppointmentMapping
                     Subject="ServiceName"

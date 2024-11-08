@@ -10,7 +10,8 @@ namespace DAL.Interfaces
     public interface IScheduleRepository
     {
         List<Schedule> GetAllById(string employeeId);
+        Schedule GetById(string scheduleId);
         void Add(Schedule schedule);
-        void Delete(Schedule schedule);
+        void Delete(string id);
     }
 }

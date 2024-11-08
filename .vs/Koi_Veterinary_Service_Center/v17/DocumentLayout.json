@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\vet\\schedulemanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\vet\\schedulemanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\customer\\bookingformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\customer\\bookingformwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\customer\\bookingformwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\customer\\bookingformwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\repositories\\schedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\schedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\vet\\schedulemanagementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\vet\\schedulemanagementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\repositories\\koiservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\koiservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\customer\\customerpanelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\customer\\customerpanelwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\customer\\customerpanelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\customer\\customerpanelwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\customer\\customerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\customer\\customerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\customer\\customerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\customer\\customerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\vet\\schedulemanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\vet\\schedulemanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\bll\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +63,40 @@
       "RelativeMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\ischeduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\common\\appointmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\common\\appointmentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\repositories\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\vet\\schedulemanagementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\vet\\schedulemanagementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\bll\\services\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|solutionrelative:bll\\services\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\bll\\interfaces\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882E83CB-E389-49F7-9151-8588AF4C43B7}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\interfaces\\islotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\islotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\interfaces\\ischedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ischedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\slottable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\slottable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\wpfapplication\\vet\\vetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09732BE-9B96-4F33-9F61-79F3D8DE0313}|WPFApplication\\WPFApplication.csproj|solutionrelative:wpfapplication\\vet\\vetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|solutionrelative:dal\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B46C5E2-47A7-4D31-9EEB-E33F539F77B9}|DAL\\DAL.csproj|e:\\class\\csharp\\projects\\koiveterinaryservicecenter\\veterinary-service-wpfapplication\\dal\\models\\bookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,53 +151,274 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AppointmentModel.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\common\\AppointmentModel.cs",
-              "RelativeDocumentMoniker": "WPFApplication\\common\\AppointmentModel.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\common\\AppointmentModel.cs",
-              "RelativeToolTip": "WPFApplication\\common\\AppointmentModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Title": "KoiServiceRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\KoiServiceRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\KoiServiceRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\KoiServiceRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\KoiServiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:19:16.831Z"
+              "WhenOpened": "2024-11-08T19:55:22.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingFormWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\BookingFormWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPFApplication\\customer\\BookingFormWindow.xaml.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\BookingFormWindow.xaml.cs",
+              "RelativeToolTip": "WPFApplication\\customer\\BookingFormWindow.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwCUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:24:57.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingFormWindow.xaml",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\BookingFormWindow.xaml",
+              "RelativeDocumentMoniker": "WPFApplication\\customer\\BookingFormWindow.xaml",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\BookingFormWindow.xaml",
+              "RelativeToolTip": "WPFApplication\\customer\\BookingFormWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T19:20:02.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Service.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Service.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Service.cs",
+              "RelativeToolTip": "DAL\\Models\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:12:42.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Booking.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Booking.cs",
+              "RelativeToolTip": "DAL\\Models\\Booking.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA4wDUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:07:07.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScheduleRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\ScheduleRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\ScheduleRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\ScheduleRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\ScheduleRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAvwDYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:11:48.45Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "CustomerPanelWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerPanelWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPFApplication\\customer\\CustomerPanelWindow.xaml.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerPanelWindow.xaml.cs",
+              "RelativeToolTip": "WPFApplication\\customer\\CustomerPanelWindow.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwEYAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:15:52.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerPanelWindow.xaml",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerPanelWindow.xaml",
+              "RelativeDocumentMoniker": "WPFApplication\\customer\\CustomerPanelWindow.xaml",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerPanelWindow.xaml",
+              "RelativeToolTip": "WPFApplication\\customer\\CustomerPanelWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T19:10:27.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\App.xaml",
+              "RelativeDocumentMoniker": "WPFApplication\\App.xaml",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\App.xaml",
+              "RelativeToolTip": "WPFApplication\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T19:24:04.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPFApplication\\customer\\CustomerWindow.xaml.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerWindow.xaml.cs",
+              "RelativeToolTip": "WPFApplication\\customer\\CustomerWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:19:12.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Customer.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Customer.cs",
+              "RelativeToolTip": "DAL\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:14:20.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerWindow.xaml",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerWindow.xaml",
+              "RelativeDocumentMoniker": "WPFApplication\\customer\\CustomerWindow.xaml",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\customer\\CustomerWindow.xaml",
+              "RelativeToolTip": "WPFApplication\\customer\\CustomerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T19:06:44.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ISlotService.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Interfaces\\ISlotService.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\ISlotService.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Interfaces\\ISlotService.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\ISlotService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:02:21.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IScheduleRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Interfaces\\IScheduleRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IScheduleRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Interfaces\\IScheduleRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IScheduleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:06:28.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ISlotRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Interfaces\\ISlotRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ISlotRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Interfaces\\ISlotRepository.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ISlotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:37:49.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SlotTable.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\SlotTable.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\SlotTable.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\SlotTable.cs",
+              "RelativeToolTip": "DAL\\Models\\SlotTable.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:32:24.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SlotService.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Services\\SlotService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\SlotService.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Services\\SlotService.cs",
+              "RelativeToolTip": "BLL\\Services\\SlotService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAMwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:31:35.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SlotRepository.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\SlotRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\SlotRepository.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\SlotRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\SlotRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwCQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:10:57.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Schedule.cs",
+              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Schedule.cs",
+              "RelativeToolTip": "DAL\\Models\\Schedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:03:12.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "VetWindow.xaml.cs",
               "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\VetWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPFApplication\\vet\\VetWindow.xaml.cs",
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\VetWindow.xaml.cs",
               "RelativeToolTip": "WPFApplication\\vet\\VetWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:19:13.746Z"
+              "WhenOpened": "2024-11-08T10:19:13.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "ScheduleManagementPage.xaml",
               "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\ScheduleManagementPage.xaml",
               "RelativeDocumentMoniker": "WPFApplication\\vet\\ScheduleManagementPage.xaml",
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\ScheduleManagementPage.xaml",
               "RelativeToolTip": "WPFApplication\\vet\\ScheduleManagementPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-08T10:17:32.889Z"
+              "WhenOpened": "2024-11-08T10:17:32.889Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Service.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Service.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Service.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\Service.cs",
-              "RelativeToolTip": "DAL\\Models\\Service.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAUwA8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:12:42.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "BookingDetail.cs",
               "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Models\\BookingDetail.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\BookingDetail.cs",
@@ -145,52 +430,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ScheduleRepository.cs",
-              "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\ScheduleRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repositories\\ScheduleRepository.cs",
-              "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\DAL\\Repositories\\ScheduleRepository.cs",
-              "RelativeToolTip": "DAL\\Repositories\\ScheduleRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwD8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:11:48.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "ScheduleManagementPage.xaml.cs",
               "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
               "RelativeDocumentMoniker": "WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
               "RelativeToolTip": "WPFApplication\\vet\\ScheduleManagementPage.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAIwDgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwJMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T10:07:22.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "ScheduleService.cs",
               "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Services\\ScheduleService.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\ScheduleService.cs",
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Services\\ScheduleService.cs",
               "RelativeToolTip": "BLL\\Services\\ScheduleService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBMAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAMwBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:05:44.84Z"
+              "WhenOpened": "2024-11-08T10:05:44.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "IScheduleService.cs",
               "DocumentMoniker": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Interfaces\\IScheduleService.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\IScheduleService.cs",
               "ToolTip": "E:\\Class\\CSHARP\\PROJECTS\\KoiVeterinaryServiceCenter\\veterinary-service-wpfapplication\\BLL\\Interfaces\\IScheduleService.cs",
               "RelativeToolTip": "BLL\\Interfaces\\IScheduleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:04:07.353Z"
+              "WhenOpened": "2024-11-08T10:04:07.353Z",
+              "EditorCaption": ""
             }
           ]
         }
