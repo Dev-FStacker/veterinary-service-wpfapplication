@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,16 @@ namespace WPFApplication.customer
     /// </summary>
     public partial class CustomerPanelWindow : Window
     {
-        public CustomerPanelWindow()
+        public Customer _customer;
+        public CustomerPanelWindow(Customer customer)
         {
             InitializeComponent();
+            _customer = customer;
         }
 
         private void BookNowButton_Click(object sender, RoutedEventArgs e)
         {
-            BookingFormWindow bookingFormWindow = new BookingFormWindow();
+            BookingFormWindow bookingFormWindow = new BookingFormWindow(_customer);
             bookingFormWindow.ShowDialog();
         }
 

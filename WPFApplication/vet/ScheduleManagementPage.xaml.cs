@@ -18,12 +18,14 @@ namespace WPFApplication.vet
     {
         private readonly IScheduleService _scheduleService;
         private readonly ISlotService _slotService;
+        public Employee _employee;
         public ObservableCollection<AppointmentModel> Appointments { get; set; }
-        public ScheduleManagementPage()
+        public ScheduleManagementPage(Employee employee)
         {
             InitializeComponent();
             _scheduleService = new ScheduleService();
             _slotService = new SlotService();
+            _employee = employee;
             LoadAppointments();
         }
 
@@ -32,7 +34,7 @@ namespace WPFApplication.vet
             Appointments = new ObservableCollection<AppointmentModel>();
             try
             {
-                var schedules = await Task.Run(() => _scheduleService.GetSchedulesById("E3"));
+                var schedules = await Task.Run(() => _scheduleService.GetSchedulesById(_employee.EmployeeId));
 
                 foreach (var schedule in schedules)
                 {
@@ -104,31 +106,31 @@ namespace WPFApplication.vet
 
                 if (matchingSlot != null)
                 {
-                    var existingSlot = _scheduleService.GetSchedulesById("E3")
+                    var existingSlot = _scheduleService.GetSchedulesById(_employee.EmployeeId)
                                         .FirstOrDefault(s => s.Date == selectedDate && s.SlotTables.Any(st => st.Slot == matchingSlot.SlotNumber));
                     if (existingSlot != null)
                     {
 
                         if (existingSlot.Bookings != null && existingSlot.Bookings.Any())
                         {
-                            var schedules =_scheduleService.GetSchedulesById("E3");
+                            var schedules =_scheduleService.GetSchedulesById(_employee.EmployeeId);
                             var bookingDetailsList = new List<string>();
                             foreach (var schedule in schedules)
                             {
                                 foreach (var booking in schedule.Bookings)
                                 {
-                                    var customerName = booking.Customer.Firstname + booking.Customer.Lastname;
+                                    var customerName = booking.Customer.Firstname + " " + booking.Customer.Lastname;
                                     var bookingDate = booking.BookingDate.ToString("yyyy-MM-dd HH:mm");
-
+                                    var address = booking.BookingAddress;
+                                    var phoneNumber = booking.Customer.Account.PhoneNumber;
                                     foreach (var detail in booking.BookingDetails)
                                     {
                                         var serviceName = detail.Service?.Name ?? "No Service";
-                                        bookingDetailsList.Add($"Customer: {customerName}, Date: {bookingDate}, Service: {serviceName}");
+                                        bookingDetailsList.Add($"Customer: {customerName}, Date: {bookingDate}, Service: {serviceName}, Address: {address}, Phone: {phoneNumber}");
                                     }
                                 }
                             }
 
-                            // Bind the list to the ListBox
                             BookingDetailsListBox.ItemsSource = bookingDetailsList;
 
                             DetailsPanel.Visibility = Visibility.Visible;
@@ -169,7 +171,7 @@ namespace WPFApplication.vet
                         var newSlot = new Schedule
                         {
                             ScheduleId = Guid.NewGuid().ToString().Substring(0, 20),
-                            EmployeeId = "E3",
+                            EmployeeId = _employee.EmployeeId,
                             Date = selectedDate,
                             Status = "Available",
                             Note = $"Available for {matchingSlot.Slot}"

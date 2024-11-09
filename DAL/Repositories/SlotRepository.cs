@@ -61,5 +61,10 @@ namespace DAL.Repositories
         {
             return _context.SlotTables.FirstOrDefault(s => s.SlotTableId == id);
         }
+
+        public void SaveSlot()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
