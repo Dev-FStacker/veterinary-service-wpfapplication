@@ -108,34 +108,59 @@ namespace WPFApplication.vet
                                         .FirstOrDefault(s => s.Date == selectedDate && s.SlotTables.Any(st => st.Slot == matchingSlot.SlotNumber));
                     if (existingSlot != null)
                     {
-                        var confirmationDelete = MessageBox.Show($"A time slot for {matchingSlot.Slot} on {selectedDate} already exists. Do you want to delete the existing booking?",
+
+                        if (existingSlot.Bookings != null && existingSlot.Bookings.Any())
+                        {
+                            var schedules =_scheduleService.GetSchedulesById("E3");
+                            var bookingDetailsList = new List<string>();
+                            foreach (var schedule in schedules)
+                            {
+                                foreach (var booking in schedule.Bookings)
+                                {
+                                    var customerName = booking.Customer.Firstname + booking.Customer.Lastname;
+                                    var bookingDate = booking.BookingDate.ToString("yyyy-MM-dd HH:mm");
+
+                                    foreach (var detail in booking.BookingDetails)
+                                    {
+                                        var serviceName = detail.Service?.Name ?? "No Service";
+                                        bookingDetailsList.Add($"Customer: {customerName}, Date: {bookingDate}, Service: {serviceName}");
+                                    }
+                                }
+                            }
+
+                            // Bind the list to the ListBox
+                            BookingDetailsListBox.ItemsSource = bookingDetailsList;
+
+                            DetailsPanel.Visibility = Visibility.Visible;
+                            return;
+                        } else
+                        {
+                            var confirmationDelete = MessageBox.Show($"A time slot for {matchingSlot.Slot} on {selectedDate} already exists. Do you want to delete the existing booking?",
                                       "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-                        if (confirmationDelete == MessageBoxResult.Yes)
-                        {
-                            if (existingSlot.Bookings != null && existingSlot.Bookings.Any())
+                            if (confirmationDelete == MessageBoxResult.Yes)
                             {
-                                MessageBox.Show($"The time slot for {matchingSlot.Slot} on {selectedDate} already has bookings and cannot be deleted.");
+
+
+                                ISlotService slotService = new SlotService();
+                                IScheduleService scheduleService = new ScheduleService();
+
+                                foreach (var slot in existingSlot.SlotTables.ToList())
+                                {
+                                    slotService.RemoveSlot(slot.SlotTableId);
+                                }
+
+                                scheduleService.RemoveSlot(existingSlot.ScheduleId);
+
+                                MessageBox.Show($"The free time slot {matchingSlot.Slot} on {selectedDateTime} has been deleted.");
                                 return;
                             }
-
-                            ISlotService slotService = new SlotService();
-                            IScheduleService scheduleService = new ScheduleService();
-
-                            foreach (var slot in existingSlot.SlotTables.ToList())
+                            else
                             {
-                                slotService.RemoveSlot(slot.SlotTableId);
+                                return;
                             }
-
-                            scheduleService.RemoveSlot(existingSlot.ScheduleId);
-
-                            MessageBox.Show($"The free time slot {matchingSlot.Slot} on {selectedDateTime} has been deleted.");
-                            return;
                         }
-                        else
-                        {
-                            return;
-                        }
+                        
                     }
                     var confirmation = MessageBox.Show($"Do you want to add a free time slot {matchingSlot.Slot} for {selectedDateTime}?",
                                                        "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -201,6 +226,11 @@ namespace WPFApplication.vet
                     MessageBox.Show($"Invalid slot number encountered: {slotNumber}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     throw new ArgumentOutOfRangeException(nameof(slotNumber), $"Invalid slot number: {slotNumber}");
             }
+        }
+        private void CloseDetailsPanel(object sender, RoutedEventArgs e)
+        {
+            DetailsPanel.Visibility = Visibility.Collapsed;
+            BookingDetailsListBox.ItemsSource = null;
         }
 
     }

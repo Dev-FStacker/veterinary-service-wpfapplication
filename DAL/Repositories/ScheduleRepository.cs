@@ -61,6 +61,8 @@ namespace DAL.Repositories
                         .ThenInclude(b => b.BookingDetails)
                             .ThenInclude(bd => bd.Service)
                     .Include(s => s.SlotTables)
+                    .Include(s => s.Bookings)  // Ensure Bookings are loaded
+                    .ThenInclude(b => b.Customer)
                     .Where(s => s.EmployeeId == employeeId)
                     .ToList();
                 return schedules;
