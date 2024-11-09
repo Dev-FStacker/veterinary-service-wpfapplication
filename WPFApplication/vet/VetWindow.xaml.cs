@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,16 @@ namespace WPFApplication
     /// </summary>
     public partial class VetWindow : Window
     {
-        public VetWindow()
+        private Employee _employee;
+        public VetWindow(Employee employee)
         {
             InitializeComponent();
+            _employee = employee;
         }
 
         private void Schedule_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new ScheduleManagementPage());
+            MainFrame.Navigate(new ScheduleManagementPage(_employee));
         }
 
         private void Profile_Click(object sender, RoutedEventArgs e)

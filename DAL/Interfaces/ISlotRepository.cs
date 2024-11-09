@@ -13,5 +13,6 @@ namespace DAL.Interfaces
         SlotTable GetById(string id);
         void Add(SlotTable slot);
         void Delete(string id);
+        void SaveSlot();
     }
 }

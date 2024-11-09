@@ -10,5 +10,7 @@ namespace BLL.Interfaces
     public interface IAuthService
     {
         public Account Authenticate(string email, string password);
+        public Employee GetEmployeeById(string accountId);
+        public Customer GetCustomerById(string accountId);
     }
 }

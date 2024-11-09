@@ -1,5 +1,6 @@
 ﻿using BLL.Interfaces;
 using BLL.Services;
+using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +23,12 @@ namespace WPFApplication.customer
     public partial class BookingFormWindow : Window
     {
         private readonly IKoiService _koiService;
-        public BookingFormWindow()
+        public Customer _customer;
+        public BookingFormWindow(Customer customer)
         {
             InitializeComponent();
             _koiService = new KoiService();
+            _customer = customer;
             LoadKoiServices();
         }
         private void LoadKoiServices()
@@ -48,7 +51,17 @@ namespace WPFApplication.customer
         }
         private void ConfirmBookingButton_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                var bookingId = Guid.NewGuid().ToString().Substring(0, 20);
+                var customerId = _customer.CustomerId;
 
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

@@ -61,8 +61,9 @@ namespace DAL.Repositories
                         .ThenInclude(b => b.BookingDetails)
                             .ThenInclude(bd => bd.Service)
                     .Include(s => s.SlotTables)
-                    .Include(s => s.Bookings)  // Ensure Bookings are loaded
+                    .Include(s => s.Bookings)
                     .ThenInclude(b => b.Customer)
+                    .ThenInclude(c => c.Account)
                     .Where(s => s.EmployeeId == employeeId)
                     .ToList();
                 return schedules;
@@ -85,6 +86,34 @@ namespace DAL.Repositories
 
                 throw;
             }
+        }
+
+        public string GetRandomSchedule(DateOnly date, int slot)
+        {
+            try
+            {
+                var schedule = _context.Schedules
+                                        .Include(s => s.SlotTables)
+                                        .Where(s => s.Date == date && s.SlotTables.Any(st => st.Slot == slot))
+                                        .ToList();
+                if (schedule.Any())
+                {
+                    var random = new Random();
+
+                    return schedule[random.Next(schedule.Count)].ScheduleId;
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void SaveSchedule()
+        {
+            throw new NotImplementedException();
         }
     }
 }

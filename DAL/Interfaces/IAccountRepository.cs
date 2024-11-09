@@ -10,5 +10,7 @@ namespace DAL.Interfaces
     public interface IAccountRepository
     {
         public Account GetAccountByEmail(string email);
+        public Employee GetEmployeeById(string accountId);
+        public Customer GetCustomerById(string accountId);
     }
 }

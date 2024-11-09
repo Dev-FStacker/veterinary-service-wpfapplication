@@ -13,5 +13,7 @@ namespace DAL.Interfaces
         Schedule GetById(string scheduleId);
         void Add(Schedule schedule);
         void Delete(string id);
+        string GetRandomSchedule(DateOnly date, int slot);
+        void SaveSchedule();
     }
 }
