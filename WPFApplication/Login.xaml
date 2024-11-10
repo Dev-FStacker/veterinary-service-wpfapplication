@@ -86,15 +86,15 @@
                 <Border Grid.Row="4" BorderBrush="#FF737776" CornerRadius="29" BorderThickness="1" Margin="55,0,95,0" >
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="51"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\padlock.png" Opacity=".5" Margin="10,16,0,17" Height="40" Width="30" Grid.Column="0" HorizontalAlignment="Left"/>
+                        <Image Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\padlock.png" Opacity=".5" Margin="2,16,0,17" Height="40" Width="30" HorizontalAlignment="Center"/>
                         <PasswordBox x:Name="pwbPassword" Grid.Column="1" Style="{StaticResource RoundedPasswordBoxStyle}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="336" BorderBrush="Transparent" FontSize="20"/>
                     </Grid>
                 </Border>
 
-                <Button x:Name="btnLogin" Style="{StaticResource RoundedButtonStyle}" Content="Login" Grid.Row="6" Margin="202,7,190,8" HorizontalContentAlignment="Center" BorderThickness="0.2" FontSize="18" Foreground="White" BorderBrush="Transparent" Click="btnLogin_Click">
+                <Button x:Name="btnLogin" Style="{StaticResource RoundedButtonStyle}" Content="Login" Grid.Row="6" Margin="199,7,193,8" HorizontalContentAlignment="Center" BorderThickness="0.2" FontSize="18" Foreground="White" BorderBrush="Transparent" Click="btnLogin_Click">
                     <Button.Background>
                         <LinearGradientBrush>
                             <GradientStop Color="#FF2729A2" Offset="0.0"/>
