@@ -10,19 +10,19 @@ using System.Threading.Tasks;
 
 namespace BLL.Services
 {
-    public class FishService : IFishService
+    public class KoiService : IKoiService
     {
-        private readonly IFishRepository _fishRepository;
-        public FishService()
+        private readonly IKoiServiceRepository _koiServiceRepository;
+        public KoiService()
         {
-            _fishRepository = new FishRepository();
+            _koiServiceRepository = new KoiServiceRepository();
         }
 
         public List<Service> GetAllServices()
         {
             try
             {
-                var services = _fishRepository.GetAll();
+                var services = _koiServiceRepository.GetAll();
                 return services;
             }
             catch (Exception ex)

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IFishRepository
+    public interface IEmployeeRepository
     {
-        List<Service> GetAll();
+        public Employee GetEmployeeByAccountId(string accountId);
     }
 }

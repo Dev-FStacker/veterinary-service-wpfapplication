@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFApplication.vet;
 
 namespace WPFApplication
 {
@@ -19,9 +21,28 @@ namespace WPFApplication
     /// </summary>
     public partial class VetWindow : Window
     {
-        public VetWindow()
+        private Employee _employee;
+        public VetWindow(Employee employee)
         {
             InitializeComponent();
+            _employee = employee;
+        }
+
+        private void Schedule_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ScheduleManagementPage(_employee));
+        }
+
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

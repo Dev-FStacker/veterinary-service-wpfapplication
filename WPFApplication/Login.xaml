@@ -34,7 +34,7 @@
 
                 <Label Content="SignUp Now To Connect With Us!" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="19" FontFamily="Arial"/>
 
-                <Button x:Name="btnSignUp" Style="{StaticResource RoundedButtonStyle}" Content="SignUp" Grid.Row="5" Foreground="White" Margin="85,5,85,10" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="White"/>
+                <Button x:Name="btnSignUp" Style="{StaticResource RoundedButtonStyle}" Content="SignUp" Grid.Row="5" Foreground="White" Margin="85,5,85,10" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="White" Click="btnSignUp_Click" FontSize="18"/>
 
             </Grid>
 

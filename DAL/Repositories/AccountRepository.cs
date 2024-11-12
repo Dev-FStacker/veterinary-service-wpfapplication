@@ -1,4 +1,5 @@
 ﻿using DAL.Data;
+using DAL.DTO;
 using DAL.Interfaces;
 using DAL.Models;
 using System;
@@ -21,6 +22,36 @@ namespace DAL.Repositories
         public Account GetAccountByEmail(string email)
         {
             return _context.Accounts.FirstOrDefault(a => a.Email == email);
+        }
+
+        public Employee GetEmployeeById(string accountId)
+        {
+            try
+            {
+                return _context.Employees.FirstOrDefault(e => e.AccountId == accountId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public Customer GetCustomerById(string accountId)
+        {
+            try
+            {
+                return _context.Customers.FirstOrDefault(c => c.AccountId == accountId);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void AddAccount(Account account) 
+        {
+            _context.Accounts.Add(account);
+            _context.SaveChanges();
         }
     }
 }

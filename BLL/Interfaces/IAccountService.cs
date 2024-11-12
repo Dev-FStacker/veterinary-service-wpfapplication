@@ -1,18 +1,16 @@
-﻿using DAL.Models;
+﻿using DAL.Interfaces;
+using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Interfaces
+namespace BLL.Interfaces
 {
-    public interface IAccountRepository
+    public interface IAccountService
     {
         public Account GetAccountByEmail(string email);
-        public Employee GetEmployeeById(string accountId);
-        public Customer GetCustomerById(string accountId);
-
         public void AddAccount(Account account);
     }
 }

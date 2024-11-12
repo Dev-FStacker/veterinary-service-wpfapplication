@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL.Interfaces
+namespace DAL.Interfaces
 {
-    public interface IFishService
+    public interface IBookingRepository
     {
-        List<Service> GetAllServices();
+        void Add(Booking booking);
     }
 }

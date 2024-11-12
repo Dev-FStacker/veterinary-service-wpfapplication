@@ -33,5 +33,15 @@ namespace BLL.Services
 
             return account;
         }
+
+        public Customer GetCustomerById(string accountId)
+        {
+            return _accountRepository.GetCustomerById(accountId);
+        }
+
+        public Employee GetEmployeeById(string accountId)
+        {
+            return _accountRepository.GetEmployeeById(accountId);
+        }
     }
 }

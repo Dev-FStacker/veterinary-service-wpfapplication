@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories
 {
-    public class FishRepository : IFishRepository
+    public class KoiServiceRepository : IKoiServiceRepository
     {
         private readonly KoiVeterinaryServiceCenter _context;
-        public FishRepository()
+        public KoiServiceRepository()
         {
             _context = new KoiVeterinaryServiceCenter();
         }
