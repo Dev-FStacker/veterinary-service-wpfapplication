@@ -5,8 +5,125 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApplication.customer"
         mc:Ignorable="d"
-        Title="CustomerWindow" Height="450" Width="800">
+        Title="CustomerWindow" Height="1000" Width="1260"
+        WindowStartupLocation="CenterScreen"
+        >
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="700"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnAbout" Content="About Us" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" FontSize="20" Margin="70,0,0,0" Background="Transparent" BorderBrush="Transparent"  Foreground="#FF54D1E6" FontFamily="Arial Rounded MT Bold" Click="btnAbout_Click" />
+
+        <Button x:Name="btnFAQ" Content="FAQ"  Grid.Column="1" FontSize="20" Margin="208,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent"   Foreground="#FF54D1E6"  FontFamily="Arial Rounded MT Bold"/>
+
+        <Button x:Name="btnService" Content="Service" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" FontSize="20"  Background="Transparent" BorderBrush="Transparent" Foreground="#FF54D1E6" FontFamily="Arial Rounded MT Bold" Click="btnService_Click" Margin="303,0,0,0"/>
+
+        <Button x:Name="btnRequest" Style="{StaticResource RoundedButtonStyle_2}" Grid.Column="1" Content="REQUEST APPOINTMENT" HorizontalAlignment="Left" Margin="421,40,0,42" Width="269" Background="#FFFCC266" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="20"/>
+
+        <Image x:Name="imgBanner" Margin="0,119,0,0" Grid.RowSpan="2" Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\KoiFish_JapaneseCarp_InAPond-FengShuiPainting_fb6e4426-57c2-44bc-87e8-573fce5504ea.jpg" Stretch="Fill" Grid.ColumnSpan="2" Visibility="Visible"/>
+
+        <Label Content="Copyright © 2013 - 2024 Aquatic Veterinary Services | Privacy Policy" Grid.Row="2" Grid.ColumnSpan="2" FontSize="15" Foreground="#FF54D1E6" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial"/>
+        <Label Content="4041 Soquel Dr, Ste 164, Soquel, CA 95073" Grid.Row="2" Grid.ColumnSpan="2" FontSize="15" Foreground="#FF54D1E6" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="Arial"/>
+        <Button x:Name="btnLogo"  Background="Transparent" Margin="112,-1,183,1" Click="btnLogo_Click" BorderBrush="Transparent">
+            <Image x:Name="imgLogo" Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\cropped-logo-KOI.png" Width="100" MouseDown="imgLogo_MouseDown" Visibility="Visible"/>
+        </Button>
+        <DataGrid x:Name="dgService" 
+          Grid.ColumnSpan="2" 
+          HorizontalAlignment="Stretch" 
+          VerticalAlignment="Stretch" 
+          Height="Auto" 
+          Width="Auto" 
+          AutoGenerateColumns="False" 
+          Grid.Row="1" 
+          SelectionMode="Single"
+          AlternatingRowBackground="#f7f7f7"
+          Background="#ffffff"
+          RowHeight="40"
+          FontSize="14"
+          CanUserAddRows="False"
+          CanUserDeleteRows="False"
+          CanUserResizeRows="False"
+          IsReadOnly="True"
+          BorderBrush="#ddd"
+          BorderThickness="1"
+          GridLinesVisibility="None"
+          Visibility="Collapsed">
+
+            <DataGrid.Columns>
+                <!-- Service Name Column -->
+                <DataGridTextColumn Width="260" 
+                            Header="Service Name" 
+                            Binding="{Binding Name}" 
+                            HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" 
+                            CellStyle="{StaticResource DataGridCellStyle}" 
+                            FontWeight="Bold" />
+
+                <!-- Method Name Column -->
+                <DataGridTextColumn Width="260" 
+                            Header="Method Name" 
+                            Binding="{Binding ServiceDeliveryMethod.Name}" 
+                            HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" 
+                            CellStyle="{StaticResource DataGridCellStyle}" 
+                            FontWeight="Bold" />
+
+                <!-- Price Column -->
+                <DataGridTextColumn Width="260" 
+                            Header="Price" 
+                            Binding="{Binding Price}" 
+                            HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" 
+                            CellStyle="{StaticResource DataGridCellStyle}" 
+                            FontWeight="Bold" />
+
+                <!-- Description Column -->
+                <DataGridTextColumn Width="260" 
+                            Header="Description" 
+                            Binding="{Binding Description}" 
+                            HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" 
+                            CellStyle="{StaticResource DataGridCellStyle}" 
+                            FontWeight="Bold" />
+
+                <!-- Status Column -->
+                <DataGridTextColumn Width="*" 
+                            Header="Status" 
+                            Binding="{Binding StatusDescription}" 
+                            HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" 
+                            CellStyle="{StaticResource DataGridCellStyle}" 
+                            FontWeight="Bold" />
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Border x:Name="borderAbout" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="400"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="560"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.Row="0" Fill="#FFAAE6F0" Grid.ColumnSpan="2"/>
+
+                <TextBlock Text="About Us" Foreground="White" VerticalAlignment="Center" FontFamily="Arial Rounded MT Bold" FontSize="60" Margin="149,0,109,0"/>
+                <Image Margin="107,70,107,100" Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\517b91909432e876bc65d131b766e912.jpg" Stretch="Fill" Grid.Row="1" Grid.RowSpan="2"/>
+                <TextBlock Grid.Column="1" Grid.Row="1" FontSize="30" FontWeight="Bold" Margin="1,18,10,221"><Run Text="Jessie Sanders, DVM, DABVP "/><LineBreak/><Run Text="(Fish Practice) - Chief "/><LineBreak/><Run Text="Veterinarian"/></TextBlock>
+                <TextBlock Grid.Column="1" Grid.Row="1" FontSize="18" Margin="0,158,0,100"><Run Text="Dr. Sanders is the owner and Chief Veterinarian of"/><Run Foreground="#FF4BAFD7" Text=" Aquatic Veterinary Services"/><Run Text=". "/><LineBreak/><Run Text="She attended Tufts University for her DVM and holds a B.S. in Marine Biology"/><LineBreak/><Run Text=" from the University of Rhode Island. She is a "/><Run Text="certified aquatic veterinarian"/><LineBreak/><Run Foreground="#FF4BAFD7" Text=" through the World Aquatic Veterinary Medical Association"/><Run Text=". "/><LineBreak/><Run Text="She is one of the first"/><Run Foreground="#FF4BAFD7" Text=" board certified veterinarians in fish practice "/><Run Text="through "/><LineBreak/><Run Text="the "/><Run Foreground="#FF4BAFD7" Text="American Board of Veterinary Practitioners"/><Run Text="."/></TextBlock>
+                <TextBlock FontSize="18" Grid.Column="1" Margin="0,339,0,101" Grid.RowSpan="2" Grid.Row="1"><Run Text="Dr. Sanders was the 2020 President of the"/><Run Foreground="#FF4BAFD7" Text=" American Association of Fish"/><LineBreak/><Run Foreground="#FF4BAFD7" Text="Veterinarians"/><Run Text=" and served as the Private Practice chair on the Aquatic Veterinary"/><LineBreak/><Run Text="Medicine Committee of the American Veterinary Medical Association. Dr. "/><LineBreak/><Run Text="Sanders is a frequent speaker at many national veterinary conferences."/></TextBlock>
+                <TextBlock FontSize="18" Grid.Column="1" Margin="0,74,0,-34" Grid.Row="2" ><Run Text="With USDA Level II Accreditation, Dr. Sanders is able to sign off on Certificates "/><LineBreak/><Run Text="of Veterinary Inspection (CVIs) for fish entering or leaving the country and "/><LineBreak/><Run Text="Veterinary Feed Directives (VFDs) providing medicated feed for fish in need."/></TextBlock>
+            </Grid>
+        </Border>
+
     </Grid>
 </Window>

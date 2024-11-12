@@ -92,7 +92,7 @@ namespace WPFApplication
                     break;
                 case "R4":
                     Customer customer = _customerService.GetCustomerByAccountId(user.AccountId);
-                    roleSpecificWindow = new CustomerPanelWindow(customer);
+                    roleSpecificWindow = new CustomerWindow(customer);
                     break;
                 default:
                     throw new Exception("Unknown user role.");

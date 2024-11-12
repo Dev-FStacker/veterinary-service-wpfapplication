@@ -1,4 +1,6 @@
-﻿using DAL.Models;
+﻿using BLL.Interfaces;
+using BLL.Services;
+using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +23,53 @@ namespace WPFApplication.customer
     public partial class CustomerWindow : Window
     {
         private Customer getCustomer;
+        private readonly IVeterinarySvService veterinaryService;
         public CustomerWindow(Customer customer)
         {
             this.getCustomer = customer;
+            veterinaryService = new VeterinarySvService();
             InitializeComponent();
+            visibilityItem();
+        }
+
+        private void visibilityItem() 
+        {
+            imgBanner.Visibility = Visibility.Visible;
+            dgService.Visibility = Visibility.Collapsed;
+            borderAbout.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnService_Click(object sender, RoutedEventArgs e)
+        {
+            imgBanner.Visibility = Visibility.Collapsed;
+            borderAbout.Visibility = Visibility.Collapsed;
+
+            dgService.Visibility = Visibility.Visible;
+
+            dgService.ItemsSource = veterinaryService.GetAllServiceAvailable();
+        }
+
+        private void btnLogo_Click(object sender, RoutedEventArgs e)
+        {
+            imgBanner.Visibility = Visibility.Visible;
+            dgService.Visibility = Visibility.Collapsed;
+            borderAbout.Visibility = Visibility.Collapsed;
+        }
+
+        private void imgLogo_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            imgBanner.Visibility = Visibility.Visible;
+
+            dgService.Visibility = Visibility.Collapsed;
+            borderAbout.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnAbout_Click(object sender, RoutedEventArgs e)
+        {
+            imgBanner.Visibility = Visibility.Collapsed;
+            dgService.Visibility = Visibility.Collapsed;
+
+            borderAbout.Visibility = Visibility.Visible;
         }
     }
 }
