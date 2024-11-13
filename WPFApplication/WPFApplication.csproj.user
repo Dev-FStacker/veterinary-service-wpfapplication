@@ -13,6 +13,9 @@
     <Compile Update="admin\ServiceManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="customer\BookingDetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="customer\BookingFormWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,12 +25,18 @@
     <Compile Update="vet\ScheduleManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="vet\VetProfileWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="admin\AdminWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="admin\ServiceManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="customer\BookingDetailsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="customer\BookingFormWindow.xaml">
@@ -46,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="vet\ScheduleManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="vet\VetProfileWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="vet\VetWindow.xaml">

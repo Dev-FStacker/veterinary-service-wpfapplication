@@ -186,3 +186,7 @@ E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplic
 E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\customer\BookingFormWindow.g.cs
 E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\customer\CustomerPanelWindow.g.cs
 E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\customer\CustomerPanelWindow.baml
+E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\vet\VetProfileWindow.g.cs
+E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\vet\VetProfileWindow.baml
+E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\customer\BookingDetailsWindow.g.cs
+E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\obj\Debug\net8.0-windows\customer\BookingDetailsWindow.baml

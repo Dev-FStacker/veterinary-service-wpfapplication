@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\Class\CSHARP\PROJECTS\KoiVeterinaryServiceCenter\veterinary-service-wpfapplication\WPFApplication\App.xaml
-91952498644
+1112430984
 
-13796257963
+15-2035864330
 252-799659803
-admin\AdminWindow.xaml;admin\ServiceManagementPage.xaml;customer\BookingFormWindow.xaml;customer\CustomerPanelWindow.xaml;customer\CustomerWindow.xaml;Login.xaml;MainWindow.xaml;vet\ScheduleManagementPage.xaml;vet\VetWindow.xaml;
+admin\AdminWindow.xaml;admin\ServiceManagementPage.xaml;customer\BookingDetailsWindow.xaml;customer\BookingFormWindow.xaml;customer\CustomerPanelWindow.xaml;customer\CustomerWindow.xaml;Login.xaml;MainWindow.xaml;vet\ScheduleManagementPage.xaml;vet\VetProfileWindow.xaml;vet\VetWindow.xaml;
 
 False
 

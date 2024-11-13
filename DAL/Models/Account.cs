@@ -26,4 +26,15 @@ public partial class Account
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 
     public virtual Role Role { get; set; } = null!;
+    
+    public string GetRoleName
+    {
+        get
+        {
+            if (RoleId == "R0" || RoleId == "R1" || RoleId == "R2") return "Admin";
+            if (RoleId == "R3") return "Veterinarian";
+            return "Customer";
+
+        }
+    }
 }

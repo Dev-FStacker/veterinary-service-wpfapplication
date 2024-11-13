@@ -10,5 +10,9 @@ namespace DAL.Interfaces
     public interface IBookingRepository
     {
         void Add(Booking booking);
+        void AddDetail(BookingDetail bookingDetail);
+        List<Booking> GetAllBookingByCustomerId(string customerId);
+        Booking GetBookingById(string bookingId);
+        void SaveChanges();
     }
 }

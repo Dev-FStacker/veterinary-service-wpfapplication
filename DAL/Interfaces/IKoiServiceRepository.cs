@@ -10,5 +10,10 @@ namespace DAL.Interfaces
     public interface IKoiServiceRepository
     {
         List<Service> GetAll();
+        Service GetById(string id);
+        void Add(Service service);
+        void Update(Service service);
+        void Delete(string id);
+        bool HasBookings(string serviceId);
     }
 }

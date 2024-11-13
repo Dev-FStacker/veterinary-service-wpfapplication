@@ -10,5 +10,10 @@ namespace BLL.Interfaces
     public interface IKoiService
     {
         List<Service> GetAllServices();
+        Service GetServiceById(string id);
+        void AddService(Service service);
+        void UpdateService(Service service);
+        void DeleteService(string id);
+        bool HasBookings(string serviceId);
     }
 }

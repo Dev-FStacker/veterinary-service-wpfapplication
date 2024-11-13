@@ -19,5 +19,5 @@ public partial class SlotTable
 
     public bool SlotStatus { get; set; }
 
-    public virtual Schedule Schedule { get; set; } = null!;
+    public Schedule Schedule { get; set; } = null!;
 }

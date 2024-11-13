@@ -10,7 +10,7 @@ namespace WPFApplication.common
 {
     public class AppointmentModel
     {
-        public string ServiceName { get; set; }
+        public string Title { get; set; }
         public DateTime From { get; set; }
         public DateTime To { get; set; }
         public Brush BackgroundColor { get; set; }

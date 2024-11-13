@@ -26,6 +26,19 @@ namespace WPFApplication.customer
         {
             InitializeComponent();
             _customer = customer;
+            CustomerIdTextBox.Text = _customer.CustomerId;
+            CustomerNameTextBox.Text = $"{_customer.Firstname} {_customer.Lastname}";
+            CustomerGenderTextBox.Text = _customer.Sex.HasValue ? (_customer.Sex.Value ? "Male" : "Female") : "Not Specified";
+            if (_customer.Birthday.HasValue)
+            {
+                CustomerDOBPicker.SelectedDate = _customer.Birthday.Value.ToDateTime(new TimeOnly(0, 0));
+            }
+            else
+            {
+                CustomerDOBPicker.SelectedDate = null; 
+            }
+            CustomerAddressTextBox.Text = _customer.Address;
+            CustomerStatusTextBox.Text = _customer.Status;
         }
 
         private void BookNowButton_Click(object sender, RoutedEventArgs e)
@@ -39,41 +52,44 @@ namespace WPFApplication.customer
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void PaymentButton_Click(object sender, RoutedEventArgs e)
         {
-
+            BookingDetailsWindow bookingDetailsWindow = new BookingDetailsWindow(_customer);
+            bookingDetailsWindow.ShowDialog();
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Close();
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to logout?",
+                                             "Logout Confirmation",
+                                             MessageBoxButton.YesNo,
+                                             MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
-            // Toggle the menu visibility with animation
             if (MenuPanel.Visibility == Visibility.Collapsed)
             {
                 AnimateMenuVisibility(Visibility.Visible, 1, 0);
-                // Play Hamburger to X Animation
                 (this.Resources["HamburgerToXStoryboard"] as Storyboard).Begin();
                 Overlay.Visibility = Visibility.Visible;
             }
             else
             {
                 AnimateMenuVisibility(Visibility.Collapsed, 0, -250);
-                // Revert Hamburger to ☰ Animation
                 (this.Resources["HamburgerToXStoryboard"] as Storyboard).Pause();
                 Overlay.Visibility = Visibility.Collapsed;
             }
         }
 
-        // Animate the Menu's visibility and sliding effect
         private void AnimateMenuVisibility(Visibility visibility, double opacity, double translationX)
         {
-            // Animate Opacity
             DoubleAnimation opacityAnimation = new DoubleAnimation
             {
                 From = MenuPanel.Opacity,
@@ -82,7 +98,6 @@ namespace WPFApplication.customer
             };
             MenuPanel.BeginAnimation(UIElement.OpacityProperty, opacityAnimation);
 
-            // Animate Slide-in / Slide-out Effect
             TranslateTransform translateTransform = new TranslateTransform();
             MenuPanel.RenderTransform = translateTransform;
 
@@ -94,7 +109,6 @@ namespace WPFApplication.customer
             };
             translateTransform.BeginAnimation(TranslateTransform.XProperty, slideAnimation);
 
-            // Set final visibility
             MenuPanel.Visibility = visibility;
         }
     }
