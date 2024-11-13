@@ -71,5 +71,12 @@ namespace WPFApplication.customer
 
             borderAbout.Visibility = Visibility.Visible;
         }
+
+        private void btnRequest_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerPanelWindow customerPanelWindow = new CustomerPanelWindow(getCustomer);
+
+
+        }
     }
 }

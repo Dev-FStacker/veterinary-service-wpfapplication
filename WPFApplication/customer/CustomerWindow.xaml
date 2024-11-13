@@ -26,7 +26,7 @@
 
         <Button x:Name="btnService" Content="Service" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" FontSize="20"  Background="Transparent" BorderBrush="Transparent" Foreground="#FF54D1E6" FontFamily="Arial Rounded MT Bold" Click="btnService_Click" Margin="303,0,0,0"/>
 
-        <Button x:Name="btnRequest" Style="{StaticResource RoundedButtonStyle_2}" Grid.Column="1" Content="REQUEST APPOINTMENT" HorizontalAlignment="Left" Margin="421,40,0,42" Width="269" Background="#FFFCC266" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="20"/>
+        <Button x:Name="btnRequest" Style="{StaticResource RoundedButtonStyle_2}" Grid.Column="1" Content="REQUEST APPOINTMENT" HorizontalAlignment="Left" Margin="421,40,0,42" Width="269" Background="#FFFCC266" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="20" Click="btnRequest_Click"/>
 
         <Image x:Name="imgBanner" Margin="0,119,0,0" Grid.RowSpan="2" Source="C:\Users\User\Desktop\FPT\Fall_2024\Group_Project_Koi\WPFApplication\image\KoiFish_JapaneseCarp_InAPond-FengShuiPainting_fb6e4426-57c2-44bc-87e8-573fce5504ea.jpg" Stretch="Fill" Grid.ColumnSpan="2" Visibility="Visible"/>
 
