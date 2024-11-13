@@ -20,5 +20,7 @@ namespace BLL.Services
         public Account GetAccountByEmail(string email) => accountRepository.GetAccountByEmail(email);
 
         public void AddAccount(Account account) => accountRepository.AddAccount(account);
+
+        public bool checkDuplicatePhone(string phone) => accountRepository.checkDuplicatePhone(phone);
     }
 }

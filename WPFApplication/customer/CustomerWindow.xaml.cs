@@ -75,8 +75,8 @@ namespace WPFApplication.customer
         private void btnRequest_Click(object sender, RoutedEventArgs e)
         {
             CustomerPanelWindow customerPanelWindow = new CustomerPanelWindow(getCustomer);
-
-
+            customerPanelWindow.Show();
+            this.Hide();
         }
     }
 }

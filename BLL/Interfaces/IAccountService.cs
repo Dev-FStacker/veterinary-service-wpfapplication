@@ -12,5 +12,7 @@ namespace BLL.Interfaces
     {
         public Account GetAccountByEmail(string email);
         public void AddAccount(Account account);
+
+        public bool checkDuplicatePhone(string phone);
     }
 }

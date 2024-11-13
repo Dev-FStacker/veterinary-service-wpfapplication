@@ -12,7 +12,7 @@ namespace DAL.Interfaces
         public Account GetAccountByEmail(string email);
         public Employee GetEmployeeById(string accountId);
         public Customer GetCustomerById(string accountId);
-
+        public bool checkDuplicatePhone(string phone);
         public void AddAccount(Account account);
     }
 }

@@ -114,9 +114,6 @@ namespace WPFApplication.customer
                 MessageBox.Show("Add false!");
                 return;
             }
-
-
-
         }
 
         private bool checkValidName(string firstName, string lastName) 
@@ -173,6 +170,12 @@ namespace WPFApplication.customer
             if (valid == false) 
             {
                 MessageBox.Show("Phone is not valid! Just accept 10 digits");
+                return false;
+            }
+
+            if (accountService.checkDuplicatePhone(phone) == true) 
+            {
+                MessageBox.Show("Phone already existed!");
                 return false;
             }
             return true;

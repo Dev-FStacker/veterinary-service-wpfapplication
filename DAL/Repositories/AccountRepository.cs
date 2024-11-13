@@ -53,5 +53,15 @@ namespace DAL.Repositories
             _context.Accounts.Add(account);
             _context.SaveChanges();
         }
+
+        public bool checkDuplicatePhone(string phone) 
+        {
+            var account = _context.Accounts.FirstOrDefault(a => a.PhoneNumber == phone);
+            if (account != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
