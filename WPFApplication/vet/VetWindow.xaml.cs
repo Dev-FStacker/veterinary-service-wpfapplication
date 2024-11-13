@@ -35,14 +35,23 @@ namespace WPFApplication
 
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
-
+            VetProfileWindow profileWindow = new VetProfileWindow(_employee);
+            profileWindow.ShowDialog();
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Close();
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to logout?",
+                                              "Logout Confirmation",
+                                              MessageBoxButton.YesNo,
+                                              MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
     }
 }

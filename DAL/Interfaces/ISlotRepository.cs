@@ -14,5 +14,6 @@ namespace DAL.Interfaces
         void Add(SlotTable slot);
         void Delete(string id);
         void SaveSlot();
+        void SaveChanges();
     }
 }

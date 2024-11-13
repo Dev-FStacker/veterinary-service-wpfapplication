@@ -23,7 +23,7 @@ namespace DAL.Repositories
             {
                 if (schedule != null)
                 {
-                    _context.Add(schedule);
+                    _context.Schedules.Add(schedule);
                     _context.SaveChanges();
                 }
             }
@@ -37,7 +37,7 @@ namespace DAL.Repositories
         {
             try
             {
-                var schedule = GetById(id);
+                var schedule = _context.Schedules.FirstOrDefault(s => s.ScheduleId == id);
                 if (schedule != null)
                 {
                     _context.Schedules.Remove(schedule);
@@ -48,7 +48,7 @@ namespace DAL.Repositories
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                throw;  // Re-throw the exception after logging it
+                throw;
             }
         }
 

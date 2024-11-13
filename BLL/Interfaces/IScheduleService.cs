@@ -11,6 +11,6 @@ namespace BLL.Interfaces
     {
         List<Schedule> GetSchedulesById(string employeeId);
         void AddSlot(Schedule schedule);
-        void RemoveSlot(string id);
+        void DeleteScheduleById(string scheduleId);
     }
 }

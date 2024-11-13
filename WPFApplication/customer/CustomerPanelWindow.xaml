@@ -102,8 +102,8 @@
                     Click="BookNowButton_Click" Style="{StaticResource MenuButtonStyle}" />
             <Button Content="Update Info" Width="200" Height="50" Margin="5"
                     Click="Button_Click" Style="{StaticResource MenuButtonStyle}" />
-            <Button Content="View Booking History" Width="200" Height="50" Margin="5"
-                    Click="Button_Click_1" Style="{StaticResource MenuButtonStyle}" />
+            <Button Content="Payment" Width="200" Height="50" Margin="5"
+                    Click="PaymentButton_Click" Style="{StaticResource MenuButtonStyle}" />
             <Button Content="Logout" Width="200" Height="50" Margin="5" 
                     Click="Logout_Click" Style="{StaticResource MenuButtonStyle}" />
         </StackPanel>
@@ -113,41 +113,54 @@
                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20" 
                    Foreground="#333"/>
 
-        <!-- Customer Information Section (Using Grid for better alignment) -->
         <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,60,20,0">
-            <!-- Background Color for the Entire Grid -->
             <Grid.Background>
                 <SolidColorBrush Color="#f0f0f0"/>
             </Grid.Background>
 
-            <!-- Border with Rounded Corners Around the Content -->
             <Border BorderBrush="#888" BorderThickness="1" CornerRadius="15" Padding="10">
                 <Grid>
+                    <!-- Định nghĩa các hàng -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Hàng cho Customer ID -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Hàng cho Full Name -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Hàng cho Gender -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Hàng cho Date of Birth -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Hàng cho Address -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Hàng cho Status -->
+                    </Grid.RowDefinitions>
+
+                    <!-- Định nghĩa các cột -->
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="150"/>
+                        <!-- Cột cho Label -->
                         <ColumnDefinition Width="*"/>
+                        <!-- Cột cho TextBox -->
                     </Grid.ColumnDefinitions>
 
-                    <!-- Labels -->
-                    <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top">
-                        <TextBlock Text="Customer ID:" FontWeight="Bold" Margin="0,5,0,0"/>
-                        <TextBlock Text="Full Name:" FontWeight="Bold" Margin="0,5,0,0"/>
-                        <TextBlock Text="Email:" FontWeight="Bold" Margin="0,5,0,0"/>
-                        <TextBlock Text="Phone Number:" FontWeight="Bold" Margin="0,5,0,0"/>
-                        <TextBlock Text="Date of Birth:" FontWeight="Bold" Margin="0,5,0,0"/>
-                    </StackPanel>
+                    <!-- Các Labels cho thông tin khách hàng -->
+                    <TextBlock Text="Customer ID:" FontWeight="Bold" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                    <TextBlock Text="Full Name:" FontWeight="Bold" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                    <TextBlock Text="Gender:" FontWeight="Bold" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                    <TextBlock Text="Date of Birth:" FontWeight="Bold" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                    <TextBlock Text="Address:" FontWeight="Bold" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                    <TextBlock Text="Status:" FontWeight="Bold" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
 
-                    <!-- Textboxes and Controls -->
-                    <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <TextBox Name="CustomerIdTextBox" IsReadOnly="True" Width="200" Margin="0,5"/>
-                        <TextBox Name="CustomerNameTextBox" Width="200" Margin="0,5"/>
-                        <TextBox Name="CustomerEmailTextBox" Width="200" Margin="0,5"/>
-                        <TextBox Name="CustomerPhoneTextBox" Width="200" Margin="0,5"/>
-                        <DatePicker Name="CustomerDOBPicker" Width="200" Margin="0,5"/>
-                    </StackPanel>
+                    <!-- Các TextBox cho thông tin khách hàng -->
+                    <TextBox Name="CustomerIdTextBox" IsReadOnly="True" Width="200" Grid.Row="0" Grid.Column="1" Margin="0,5"/>
+                    <TextBox Name="CustomerNameTextBox" IsReadOnly="True" Width="200" Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+                    <TextBox Name="CustomerGenderTextBox" IsReadOnly="True" Width="200" Grid.Row="2" Grid.Column="1" Margin="0,5"/>
+                    <DatePicker Name="CustomerDOBPicker" IsEnabled="False" Width="200" Grid.Row="3" Grid.Column="1" Margin="0,5"/>
+                    <TextBox Name="CustomerAddressTextBox" IsReadOnly="True" Width="200" Grid.Row="4" Grid.Column="1" Margin="0,5"/>
+                    <TextBox Name="CustomerStatusTextBox" IsReadOnly="True" Width="200" Grid.Row="5" Grid.Column="1" Margin="0,5"/>
                 </Grid>
             </Border>
         </Grid>
-
     </Grid>
 </Window>

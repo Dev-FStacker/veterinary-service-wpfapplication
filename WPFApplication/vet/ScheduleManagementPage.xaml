@@ -12,7 +12,7 @@
         <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" CellTapped="Schedule_CellTapped" >
             <syncfusion:SfScheduler.AppointmentMapping>
                 <syncfusion:AppointmentMapping
-                    Subject="ServiceName"
+                    Subject="Title"
                     StartTime="From"
                     EndTime="To"
                     AppointmentBackground="BackgroundColor"
@@ -20,22 +20,20 @@
             </syncfusion:SfScheduler.AppointmentMapping>
         </syncfusion:SfScheduler>
         <StackPanel x:Name="DetailsPanel" Visibility="Collapsed" Background="LightGray" Margin="10" 
-            VerticalAlignment="Top" HorizontalAlignment="Right" Width="300" Height="Auto">
-            <!-- Title Section with Centered Text -->
+            VerticalAlignment="Top" HorizontalAlignment="Right" Width="300" MaxHeight="600">
+
             <TextBlock Text="Booking Details" FontSize="16" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" Foreground="#333333"/>
 
-            <!-- ListBox for Booking Details -->
-            <ListBox x:Name="BookingDetailsListBox" Margin="10,0" Padding="5" VerticalAlignment="Top">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding}" FontSize="14" Foreground="#555555"/>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            <!-- Wrap the entire content in a ScrollViewer for overflow handling -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="10,0" MaxHeight="400">
+                <StackPanel x:Name="BookingDetailsStackPanel" Margin="10,0">
+                    <!-- Booking details will be dynamically added here -->
+                </StackPanel>
+            </ScrollViewer>
 
-            <!-- Close Button at the bottom -->
-            <Button Content="Close" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+            <Button Content="Close" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" 
             Padding="10,5" Click="CloseDetailsPanel" FontSize="14" FontWeight="Bold" Background="#4CAF50" Foreground="White"/>
         </StackPanel>
+
     </Grid>
 </Page>

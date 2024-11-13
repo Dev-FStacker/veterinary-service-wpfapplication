@@ -9,8 +9,10 @@ namespace BLL.Interfaces
 {
     public interface ISlotService
     {
-        List<SlotTable> GetSlotsById(string scheduleId);
+        List<SlotTable>? GetSlotsByScheduleId(string scheduleId);
         void AddSlot(SlotTable slot);
         void RemoveSlot(string id);
+        SlotTable GetSlotById(string id);
+        void SaveChanges();
     }
 }

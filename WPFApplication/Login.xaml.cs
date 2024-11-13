@@ -41,7 +41,7 @@ namespace WPFApplication
             try
             {
                 Account account = _authService.Authenticate(email, password);
-                MessageBox.Show("Login successful", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Login successfully", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 OpenRoleSpecificWindow(account);
                 this.Close();
             }
@@ -75,23 +75,22 @@ namespace WPFApplication
         {
             Window roleSpecificWindow;
             IAuthService authService = new AuthService();
-            switch (user.RoleId)
+            switch (user.GetRoleName)
             {
-                case "R1":
+                case "Admin":
                     roleSpecificWindow = new AdminWindow();
                     break;
-                case "R3":
+                case "Veterinarian":
                     var employee = authService.GetEmployeeById(user.AccountId);
                     roleSpecificWindow = new VetWindow(employee);
                     break;
-                case "R4":
+                case "Customer":
                     var customer = authService.GetCustomerById(user.AccountId);
                     roleSpecificWindow = new CustomerPanelWindow(customer);
                     break;
                 default:
                     throw new Exception("Unknown user role.");
             }
-
             roleSpecificWindow.Show();
         }
     }

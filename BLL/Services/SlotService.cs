@@ -20,11 +20,20 @@ namespace BLL.Services
 
         public void AddSlot(SlotTable slot) => _slotRepository.Add(slot);
 
-        public List<SlotTable> GetSlotsById(string scheduleId)
+        public SlotTable GetSlotById(string id)
+        {
+            return _slotRepository.GetById(id);
+        }
+
+        public List<SlotTable>? GetSlotsByScheduleId(string scheduleId)
         {
             return _slotRepository.GetAllById(scheduleId);
         }
         public void RemoveSlot(string id) => _slotRepository.Delete(id);
-        
+
+        public void SaveChanges()
+        {
+            _slotRepository.SaveChanges();
+        }
     }
 }
